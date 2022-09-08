@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: brown;
+    padding: 0 20px;
+}
+.wrapper{
+    max-width: 450px;
+    margin: 150px auto ;
+}
+.wrapper .searchIn{
+    background-color: rgb(238, 231, 218);
+    width: 100%;
+    border-radius: 5px;
+}
+.searchIn input{
+    height: 55px;
+    width: 82%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+}
+.searchIn .autocombox{
+    padding:0px;
+    max-height: 280px;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+.searchIn .active .autocombox{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+
+}
+.autocombox li{
+    list-style: none;
+    padding: 8px 12px;
+    width: 100%;
+    cursor:default;
+    border-radius: 3px;
+    display: none;
+}
+.searchIn .active .autocombox .li{
+    display: block;
+}
+.autocombox li:hover{
+    background-color: azure;
+}
